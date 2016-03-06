@@ -1,0 +1,115 @@
+<?php
+
+function torpedo_saude_init() {
+
+}
+
+function torpedo_saude_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'views_exposed_form' && isset($form['field_descricao_do_status_value'])) {
+    $form['field_descricao_do_status_value']['#type'] = 'select';
+    $options = array(
+      '' => t('All'),
+      'AGUARDA PROVIDENCIA' => t('Aguarda providência'),
+      'COM PRAZO PARA EXECUCAO' => t('Com prazo para execução'),
+      'EXECUTADO' => t('Executado'),
+      'FINALIZADA - NAO EXECUTAVEL' => t('Finalizada - Não executável'),
+      'NA PROGRAMAÇAO' => t('Na programação'),
+      'NAO EXECUTADO' => t('Não executado'),
+      'REENCAMINHAR' => t('Reencaminhar'),
+    );
+    $form['field_descricao_do_status_value']['#options'] = $options;
+    unset($form['field_descricao_do_status_value']['#size']);
+  }
+}
+
+function torpedo_saude_menu() {
+  $items['admin/torpedo-saude'] = array(
+    'title' => 'Torpedo Saude',
+    'access arguments' => array('access administration pages'),
+    'weight' => -100,
+    'page callback' => 'system_admin_menu_block_page',
+    'file' => 'system.admin.inc',
+    'file path' => drupal_get_path('module', 'system'),
+  );
+
+  $items['abc'] = array(
+    'title' => 'Torpedo Saude',
+    'access arguments' => array('access administration pages'),
+    'weight' => -100,
+    'page callback' => 'get_foco_from_server',
+  );
+
+  $items['admin/torpedo-saude/importar-foco'] = array(
+    'title' => 'Importar Foco',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('importar_foco_form'),
+    'access arguments' => array('access administration pages'),
+    'file' => 'inc/importar_foco.inc',
+  );
+
+  return $items;
+}
+
+function get_foco_from_server() {
+  $options = array(
+    'headers' => array(
+      'Accept' => 'application/json',
+      'client_id' => 'dG4mMHm2LBT3'
+    ),
+    'method' => 'GET',
+  );
+
+  $url = 'http://api.ima.sp.gov.br/v1/atendimento?limit=100&offset=300&filters=codigoAssunto%3A1271%2CanoSolicitacao%3A2016';
+
+  $result_encoded = drupal_http_request($url, $options);
+  $result = json_decode($result_encoded->data);
+
+  foreach ($result as $item) {
+    $node = new stdClass();
+
+    $node->uid = 1;
+    $node->language = LANGUAGE_NONE;
+    $node->language = 'pt-br';
+    $node->title = $item->id;
+    $node->status = 1;
+    $node->type = 'denuncia_de_foco';
+    $node->field_nome_regional['und'][0]['value'] = isset($item->nomeRegional) ? $item->nomeRegional : '';
+    $node->field_codigo_da_regiao['und'][0]['value'] = isset($item->codigoRegiao) ? $item->codigoRegiao : '';
+    $node->field_secretaria['und'][0]['value'] = isset($item->secretaria) ? $item->secretaria : '';
+    $node->field_codigo_do_bairro['und'][0]['value'] = $item->codigoBairro;
+    $node->field_nome_do_bairro['und'][0]['value'] = $item->nomeBairro;
+    $node->field_codigo_do_assunto['und'][0]['value'] = $item->codigoAssunto;
+    $node->field_descricao_do_assunto['und'][0]['value'] = $item->descricaoAssunto;
+    $node->field_ano_da_solicitacao['und'][0]['value'] = $item->anoSolicitacao;
+    $node->field_tipo_da_solicitacao['und'][0]['value'] = $item->tipoSolicitacao;
+    $node->field_descricao_do_tipo['und'][0]['value'] = $item->descricaoTipoSolicitacao;
+    $node->field_status_da_solicitacao['und'][0]['value'] = $item->statusSolicitacao;
+    $node->field_descricao_do_status['und'][0]['value'] = $item->descricaoStatus;
+    $node->field_data_de_cadastro['und'][0]['value'] = date('Y-m-d h:i:s', strtotime(date_change_format($item->dataCadastro)));
+    $node->field_data_de_atendimento['und'][0]['value'] = date('Y-m-d h:i:s', strtotime(date_change_format($item->dataAtendimento)));
+    $node->field_data_de_conclusao['und'][0]['value'] = date('Y-m-d h:i:s', strtotime(date_change_format($item->dataConclusao)));
+    $node->field_data_de_previsao_resposta['und'][0]['value'] = date('Y-m-d h:i:s', strtotime(date_change_format($item->dataPrevisaoResposta)));
+    $node->field_endereco['und'][] = array(
+      'street' => $item->tipoLogradouro . ' ' . $item->nomeLogradouro,
+      'city' => 'Campinas',
+      'province' => 'SP',
+      'postal_code' => $item->cep,
+      'country' => 'br',
+    );
+    $node->field_data_da_providencia['und'][0]['value'] = date('Y-m-d h:i:s', strtotime(date_change_format($item->dataProvidencia)));
+    $node->field_numero_da_solicitacao['und'][0]['value'] = $item->numeroSolicitacao;
+
+    $node = node_submit($node);
+    node_save($node);
+  }
+}
+
+function date_change_format($setDate, $from = 'd/m/Y', $to = 'm/d/Y') {
+  if ($setDate != '') {
+    $date = DateTime::createFromFormat($from, $setDate);
+    return $date->format($to);
+  }
+  else {
+    return '';
+  }
+}
