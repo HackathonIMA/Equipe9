@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13ADE90B2E6879BBE52A1C66 /* Pods_TorpedoSaude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D50580CB260737C4F85DDB /* Pods_TorpedoSaude.framework */; };
+		552F438A1C8C033200CD6A26 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552F43891C8C033200CD6A26 /* Alamofire.framework */; };
+		552F438C1C8C034A00CD6A26 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552F438B1C8C034900CD6A26 /* SwiftyJSON.framework */; };
 		5551B6511C8B32E4005D1310 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551B6501C8B32E4005D1310 /* AppDelegate.swift */; };
 		5551B6561C8B32E4005D1310 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5551B6541C8B32E4005D1310 /* Main.storyboard */; };
 		5551B6581C8B32E4005D1310 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5551B6571C8B32E4005D1310 /* Assets.xcassets */; };
@@ -40,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		552F43891C8C033200CD6A26 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		552F438B1C8C034900CD6A26 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		5551B64D1C8B32E4005D1310 /* TorpedoSaude.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TorpedoSaude.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5551B6501C8B32E4005D1310 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5551B6551C8B32E4005D1310 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +64,9 @@
 		5551B69C1C8B52D0005D1310 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		5551B69E1C8B66CC005D1310 /* Geoification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geoification.swift; sourceTree = "<group>"; };
 		5551B6A01C8B694B005D1310 /* AlertSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertSource.swift; sourceTree = "<group>"; };
+		600B42DDCEEA77F1277B7EF3 /* Pods-TorpedoSaude.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TorpedoSaude.release.xcconfig"; path = "Pods/Target Support Files/Pods-TorpedoSaude/Pods-TorpedoSaude.release.xcconfig"; sourceTree = "<group>"; };
+		95D50580CB260737C4F85DDB /* Pods_TorpedoSaude.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TorpedoSaude.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8220EE93DEC376313FB2312 /* Pods-TorpedoSaude.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TorpedoSaude.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TorpedoSaude/Pods-TorpedoSaude.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				552F438C1C8C034A00CD6A26 /* SwiftyJSON.framework in Frameworks */,
+				552F438A1C8C033200CD6A26 /* Alamofire.framework in Frameworks */,
+				13ADE90B2E6879BBE52A1C66 /* Pods_TorpedoSaude.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +104,8 @@
 				5551B6641C8B32E4005D1310 /* GrupoFlechaTests */,
 				5551B66F1C8B32E4005D1310 /* GrupoFlechaUITests */,
 				5551B64E1C8B32E4005D1310 /* Products */,
+				6AB33F8E6439FEAB2A20DE19 /* Pods */,
+				A720BAF3D6B24E0008731328 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +153,8 @@
 		5551B67E1C8B32F1005D1310 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5551B6541C8B32E4005D1310 /* Main.storyboard */,
+				5551B6591C8B32E4005D1310 /* LaunchScreen.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -147,8 +162,6 @@
 		5551B67F1C8B32F9005D1310 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				5551B6541C8B32E4005D1310 /* Main.storyboard */,
-				5551B6591C8B32E4005D1310 /* LaunchScreen.storyboard */,
 				5551B6811C8B3407005D1310 /* MainTabBarController.swift */,
 				5551B6831C8B3459005D1310 /* AlertController.swift */,
 				5551B6851C8B3477005D1310 /* MapViewController.swift */,
@@ -167,6 +180,25 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		6AB33F8E6439FEAB2A20DE19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8220EE93DEC376313FB2312 /* Pods-TorpedoSaude.debug.xcconfig */,
+				600B42DDCEEA77F1277B7EF3 /* Pods-TorpedoSaude.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A720BAF3D6B24E0008731328 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				552F438B1C8C034900CD6A26 /* SwiftyJSON.framework */,
+				552F43891C8C033200CD6A26 /* Alamofire.framework */,
+				95D50580CB260737C4F85DDB /* Pods_TorpedoSaude.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,9 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5551B6751C8B32E4005D1310 /* Build configuration list for PBXNativeTarget "TorpedoSaude" */;
 			buildPhases = (
+				F8FFA5FD41D86E6FCA3E405F /* Check Pods Manifest.lock */,
 				5551B6491C8B32E4005D1310 /* Sources */,
 				5551B64A1C8B32E4005D1310 /* Frameworks */,
 				5551B64B1C8B32E4005D1310 /* Resources */,
+				6DA644CEDB687FE7F0ADF2B1 /* Embed Pods Frameworks */,
+				AFE6F1E85DF853236F2BFE0D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -293,6 +328,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6DA644CEDB687FE7F0ADF2B1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TorpedoSaude/Pods-TorpedoSaude-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFE6F1E85DF853236F2BFE0D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TorpedoSaude/Pods-TorpedoSaude-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8FFA5FD41D86E6FCA3E405F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5551B6491C8B32E4005D1310 /* Sources */ = {
@@ -446,10 +529,15 @@
 		};
 		5551B6761C8B32E4005D1310 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8220EE93DEC376313FB2312 /* Pods-TorpedoSaude.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = GrupoFlecha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = davi.GrupoFlecha;
@@ -460,10 +548,15 @@
 		};
 		5551B6771C8B32E4005D1310 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 600B42DDCEEA77F1277B7EF3 /* Pods-TorpedoSaude.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = GrupoFlecha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = davi.GrupoFlecha;
