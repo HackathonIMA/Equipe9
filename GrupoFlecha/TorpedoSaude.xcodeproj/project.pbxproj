@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5551B6511C8B32E4005D1310 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551B6501C8B32E4005D1310 /* AppDelegate.swift */; };
+		5551B6561C8B32E4005D1310 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5551B6541C8B32E4005D1310 /* Main.storyboard */; };
+		5551B6581C8B32E4005D1310 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5551B6571C8B32E4005D1310 /* Assets.xcassets */; };
+		5551B65B1C8B32E4005D1310 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5551B6591C8B32E4005D1310 /* LaunchScreen.storyboard */; };
+		5551B6661C8B32E4005D1310 /* GrupoFlechaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551B6651C8B32E4005D1310 /* GrupoFlechaTests.swift */; };
+		5551B6711C8B32E4005D1310 /* GrupoFlechaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551B6701C8B32E4005D1310 /* GrupoFlechaUITests.swift */; };
+		5551B6821C8B3407005D1310 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551B6811C8B3407005D1310 /* MainTabBarController.swift */; };
+		5551B6841C8B3459005D1310 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551B6831C8B3459005D1310 /* AlertController.swift */; };
+		5551B6861C8B3477005D1310 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551B6851C8B3477005D1310 /* MapViewController.swift */; };
+		5551B6881C8B349A005D1310 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551B6871C8B349A005D1310 /* ConfigViewController.swift */; };
+		5551B69D1C8B52D0005D1310 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551B69C1C8B52D0005D1310 /* UserInfo.swift */; };
+		5551B69F1C8B66CC005D1310 /* Geoification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551B69E1C8B66CC005D1310 /* Geoification.swift */; };
+		5551B6A11C8B694B005D1310 /* AlertSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551B6A01C8B694B005D1310 /* AlertSource.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5551B6621C8B32E4005D1310 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5551B6451C8B32E4005D1310 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5551B64C1C8B32E4005D1310;
+			remoteInfo = GrupoFlecha;
+		};
+		5551B66D1C8B32E4005D1310 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5551B6451C8B32E4005D1310 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5551B64C1C8B32E4005D1310;
+			remoteInfo = GrupoFlecha;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5551B64D1C8B32E4005D1310 /* TorpedoSaude.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TorpedoSaude.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5551B6501C8B32E4005D1310 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5551B6551C8B32E4005D1310 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5551B6571C8B32E4005D1310 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5551B65A1C8B32E4005D1310 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5551B65C1C8B32E4005D1310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5551B6611C8B32E4005D1310 /* TorpedoSaude.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TorpedoSaude.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5551B6651C8B32E4005D1310 /* GrupoFlechaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrupoFlechaTests.swift; sourceTree = "<group>"; };
+		5551B6671C8B32E4005D1310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5551B66C1C8B32E4005D1310 /* TorpedoSaude.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TorpedoSaude.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5551B6701C8B32E4005D1310 /* GrupoFlechaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrupoFlechaUITests.swift; sourceTree = "<group>"; };
+		5551B6721C8B32E4005D1310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5551B6811C8B3407005D1310 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		5551B6831C8B3459005D1310 /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		5551B6851C8B3477005D1310 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		5551B6871C8B349A005D1310 /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
+		5551B69C1C8B52D0005D1310 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		5551B69E1C8B66CC005D1310 /* Geoification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geoification.swift; sourceTree = "<group>"; };
+		5551B6A01C8B694B005D1310 /* AlertSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertSource.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5551B64A1C8B32E4005D1310 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5551B65E1C8B32E4005D1310 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5551B6691C8B32E4005D1310 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5551B6441C8B32E4005D1310 = {
+			isa = PBXGroup;
+			children = (
+				5551B64F1C8B32E4005D1310 /* GrupoFlecha */,
+				5551B6641C8B32E4005D1310 /* GrupoFlechaTests */,
+				5551B66F1C8B32E4005D1310 /* GrupoFlechaUITests */,
+				5551B64E1C8B32E4005D1310 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5551B64E1C8B32E4005D1310 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5551B64D1C8B32E4005D1310 /* TorpedoSaude.app */,
+				5551B6611C8B32E4005D1310 /* TorpedoSaude.xctest */,
+				5551B66C1C8B32E4005D1310 /* TorpedoSaude.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5551B64F1C8B32E4005D1310 /* GrupoFlecha */ = {
+			isa = PBXGroup;
+			children = (
+				5551B6801C8B32FF005D1310 /* Model */,
+				5551B67F1C8B32F9005D1310 /* Controller */,
+				5551B67E1C8B32F1005D1310 /* View */,
+				5551B6501C8B32E4005D1310 /* AppDelegate.swift */,
+				5551B6571C8B32E4005D1310 /* Assets.xcassets */,
+				5551B65C1C8B32E4005D1310 /* Info.plist */,
+			);
+			path = GrupoFlecha;
+			sourceTree = "<group>";
+		};
+		5551B6641C8B32E4005D1310 /* GrupoFlechaTests */ = {
+			isa = PBXGroup;
+			children = (
+				5551B6651C8B32E4005D1310 /* GrupoFlechaTests.swift */,
+				5551B6671C8B32E4005D1310 /* Info.plist */,
+			);
+			path = GrupoFlechaTests;
+			sourceTree = "<group>";
+		};
+		5551B66F1C8B32E4005D1310 /* GrupoFlechaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5551B6701C8B32E4005D1310 /* GrupoFlechaUITests.swift */,
+				5551B6721C8B32E4005D1310 /* Info.plist */,
+			);
+			path = GrupoFlechaUITests;
+			sourceTree = "<group>";
+		};
+		5551B67E1C8B32F1005D1310 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5551B67F1C8B32F9005D1310 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5551B6541C8B32E4005D1310 /* Main.storyboard */,
+				5551B6591C8B32E4005D1310 /* LaunchScreen.storyboard */,
+				5551B6811C8B3407005D1310 /* MainTabBarController.swift */,
+				5551B6831C8B3459005D1310 /* AlertController.swift */,
+				5551B6851C8B3477005D1310 /* MapViewController.swift */,
+				5551B6871C8B349A005D1310 /* ConfigViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5551B6801C8B32FF005D1310 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5551B69C1C8B52D0005D1310 /* UserInfo.swift */,
+				5551B69E1C8B66CC005D1310 /* Geoification.swift */,
+				5551B6A01C8B694B005D1310 /* AlertSource.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5551B64C1C8B32E4005D1310 /* TorpedoSaude */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5551B6751C8B32E4005D1310 /* Build configuration list for PBXNativeTarget "TorpedoSaude" */;
+			buildPhases = (
+				5551B6491C8B32E4005D1310 /* Sources */,
+				5551B64A1C8B32E4005D1310 /* Frameworks */,
+				5551B64B1C8B32E4005D1310 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TorpedoSaude;
+			productName = GrupoFlecha;
+			productReference = 5551B64D1C8B32E4005D1310 /* TorpedoSaude.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5551B6601C8B32E4005D1310 /* TorpedoSaudeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5551B6781C8B32E4005D1310 /* Build configuration list for PBXNativeTarget "TorpedoSaudeTests" */;
+			buildPhases = (
+				5551B65D1C8B32E4005D1310 /* Sources */,
+				5551B65E1C8B32E4005D1310 /* Frameworks */,
+				5551B65F1C8B32E4005D1310 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5551B6631C8B32E4005D1310 /* PBXTargetDependency */,
+			);
+			name = TorpedoSaudeTests;
+			productName = GrupoFlechaTests;
+			productReference = 5551B6611C8B32E4005D1310 /* TorpedoSaude.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5551B66B1C8B32E4005D1310 /* TorpedoSaudeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5551B67B1C8B32E4005D1310 /* Build configuration list for PBXNativeTarget "TorpedoSaudeUITests" */;
+			buildPhases = (
+				5551B6681C8B32E4005D1310 /* Sources */,
+				5551B6691C8B32E4005D1310 /* Frameworks */,
+				5551B66A1C8B32E4005D1310 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5551B66E1C8B32E4005D1310 /* PBXTargetDependency */,
+			);
+			name = TorpedoSaudeUITests;
+			productName = GrupoFlechaUITests;
+			productReference = 5551B66C1C8B32E4005D1310 /* TorpedoSaude.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5551B6451C8B32E4005D1310 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Davi Rodrigues";
+				TargetAttributes = {
+					5551B64C1C8B32E4005D1310 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = FBQNLH4A3W;
+					};
+					5551B6601C8B32E4005D1310 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 5551B64C1C8B32E4005D1310;
+					};
+					5551B66B1C8B32E4005D1310 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 5551B64C1C8B32E4005D1310;
+					};
+				};
+			};
+			buildConfigurationList = 5551B6481C8B32E4005D1310 /* Build configuration list for PBXProject "TorpedoSaude" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5551B6441C8B32E4005D1310;
+			productRefGroup = 5551B64E1C8B32E4005D1310 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5551B64C1C8B32E4005D1310 /* TorpedoSaude */,
+				5551B6601C8B32E4005D1310 /* TorpedoSaudeTests */,
+				5551B66B1C8B32E4005D1310 /* TorpedoSaudeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5551B64B1C8B32E4005D1310 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5551B65B1C8B32E4005D1310 /* LaunchScreen.storyboard in Resources */,
+				5551B6581C8B32E4005D1310 /* Assets.xcassets in Resources */,
+				5551B6561C8B32E4005D1310 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5551B65F1C8B32E4005D1310 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5551B66A1C8B32E4005D1310 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5551B6491C8B32E4005D1310 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5551B6841C8B3459005D1310 /* AlertController.swift in Sources */,
+				5551B6881C8B349A005D1310 /* ConfigViewController.swift in Sources */,
+				5551B6511C8B32E4005D1310 /* AppDelegate.swift in Sources */,
+				5551B6861C8B3477005D1310 /* MapViewController.swift in Sources */,
+				5551B69D1C8B52D0005D1310 /* UserInfo.swift in Sources */,
+				5551B6A11C8B694B005D1310 /* AlertSource.swift in Sources */,
+				5551B6821C8B3407005D1310 /* MainTabBarController.swift in Sources */,
+				5551B69F1C8B66CC005D1310 /* Geoification.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5551B65D1C8B32E4005D1310 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5551B6661C8B32E4005D1310 /* GrupoFlechaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5551B6681C8B32E4005D1310 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5551B6711C8B32E4005D1310 /* GrupoFlechaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5551B6631C8B32E4005D1310 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5551B64C1C8B32E4005D1310 /* TorpedoSaude */;
+			targetProxy = 5551B6621C8B32E4005D1310 /* PBXContainerItemProxy */;
+		};
+		5551B66E1C8B32E4005D1310 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5551B64C1C8B32E4005D1310 /* TorpedoSaude */;
+			targetProxy = 5551B66D1C8B32E4005D1310 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5551B6541C8B32E4005D1310 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5551B6551C8B32E4005D1310 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5551B6591C8B32E4005D1310 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5551B65A1C8B32E4005D1310 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5551B6731C8B32E4005D1310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5551B6741C8B32E4005D1310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5551B6761C8B32E4005D1310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = GrupoFlecha/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = davi.GrupoFlecha;
+				PRODUCT_NAME = TorpedoSaude;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		5551B6771C8B32E4005D1310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = GrupoFlecha/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = davi.GrupoFlecha;
+				PRODUCT_NAME = TorpedoSaude;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		5551B6791C8B32E4005D1310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GrupoFlechaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = davi.GrupoFlechaTests;
+				PRODUCT_NAME = TorpedoSaude;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TorpedoSaude.app/TorpedoSaude";
+			};
+			name = Debug;
+		};
+		5551B67A1C8B32E4005D1310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GrupoFlechaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = davi.GrupoFlechaTests;
+				PRODUCT_NAME = TorpedoSaude;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TorpedoSaude.app/TorpedoSaude";
+			};
+			name = Release;
+		};
+		5551B67C1C8B32E4005D1310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GrupoFlechaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = davi.GrupoFlechaUITests;
+				PRODUCT_NAME = TorpedoSaude;
+				TEST_TARGET_NAME = GrupoFlecha;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		5551B67D1C8B32E4005D1310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GrupoFlechaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = davi.GrupoFlechaUITests;
+				PRODUCT_NAME = TorpedoSaude;
+				TEST_TARGET_NAME = GrupoFlecha;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5551B6481C8B32E4005D1310 /* Build configuration list for PBXProject "TorpedoSaude" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5551B6731C8B32E4005D1310 /* Debug */,
+				5551B6741C8B32E4005D1310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5551B6751C8B32E4005D1310 /* Build configuration list for PBXNativeTarget "TorpedoSaude" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5551B6761C8B32E4005D1310 /* Debug */,
+				5551B6771C8B32E4005D1310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5551B6781C8B32E4005D1310 /* Build configuration list for PBXNativeTarget "TorpedoSaudeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5551B6791C8B32E4005D1310 /* Debug */,
+				5551B67A1C8B32E4005D1310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5551B67B1C8B32E4005D1310 /* Build configuration list for PBXNativeTarget "TorpedoSaudeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5551B67C1C8B32E4005D1310 /* Debug */,
+				5551B67D1C8B32E4005D1310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5551B6451C8B32E4005D1310 /* Project object */;
+}
