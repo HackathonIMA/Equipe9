@@ -108,8 +108,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         for coord in AlertSource.pinCoordinates {
             let annotation = MKPointAnnotation()
             annotation.coordinate = coord
-            annotation.title = "Dengue na sua casa!"
-            annotation.subtitle = "Olha a agua parada no copinho de danone"
+            annotation.title = "Dengue próximo da sua casa!"
+            annotation.subtitle = "Temos denuncia de um foco de dengue próximo a sua residencia"
             map.addAnnotation(annotation)
         }
     }

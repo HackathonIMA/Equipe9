@@ -29,6 +29,8 @@ class MainTabBarController: UITabBarController {
         
         self.tabBar.barStyle = UIBarStyle.Black
         
+        self.selectedIndex = 2
+        
         //Recupera dados salvos do usuário
         if(defaults.integerForKey("age") != 0) {
             UserInfo.userAge = defaults.integerForKey("age")
